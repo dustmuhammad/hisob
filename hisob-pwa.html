@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="uz"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hisob-kitob</title>
+<link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAIAAADdvvtQAAACeElEQVR42u3cMW7qUBBAURtBTZOeVLQoS2ApXgFZSnbgpWQJUVqq9KRJnSYtQimMY8KM55wu0hd6H1/Gfsim3RxODYy18BYgIASEgBAQCAgBISAEBAJCQAgIAYGAEBACQkAgIASEgBAQAgIBISAEhIBAQAgIASEgEBACQkDMyzLLQvtudf7nfreudqgenz8DrqqN/xN3F+nISEDT1FO2oVAZLVLX0zTN6/tXwYA+Xh4ENEE9GhIQuRsKGtDw8VN5CJlApB9CAkJAhpCAMIEQEAgIASEgBAQCQkAICAGBgBAQAkJAICAEhIDIbFn2fx7zUfMm0kODAkqWzvnysmTkFIaAZjR+0q3TBEJACMgeJ+k6TSBs40d9uH0PJKBCx8kpDAGBgBAQAkJAICAEhIAQEAICASEgBEQZngsLx/1A0plgeW5pxTWQ8WOdAkJACMgeZ6brNIGwjR/14fY9kIAKHSenMAQEAkJACAgBgYAQEAJCQAgIBISAEBBleC4sHPcDSWeC5bmlFddAxo91CggBISB7nJmu0wTCNn7Uh9v3QAIqdJycwhAQCAgBISAEBAJCQAgIASEgEBACQkCUUfd2juPTdtoX3L4dBSSdv75stYycwhBQgPHzb68vIAQEZQO69UWui2iwjR8wJHwPJCDH2ykMASEgEBACQkAIiFTu+0NHAkJAxo+ALnT991X/fr9bi0lAJBs/oQMaPoRqjp8gPxIaegINaUg999VuDqfgb1bfrdQTMJ00Af2akXQEhF0YAvIWICAEhIAQEAgIASEgBAQCQkAICAGBgBAQAkJAICAEhIAQEAICASEgBISAQEAICAEhIBAQt/ADleuIzseDDosAAAAASUVORK5CYII=">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAIAAADdvvtQAAACeElEQVR42u3cMW7qUBBAURtBTZOeVLQoS2ApXgFZSnbgpWQJUVqq9KRJnSYtQimMY8KM55wu0hd6H1/Gfsim3RxODYy18BYgIASEgBAQCAgBISAEBAJCQAgIAYGAEBACQkAgIASEgBAQAgIBISAEhIBAQAgIASEgEBACQkDMyzLLQvtudf7nfreudqgenz8DrqqN/xN3F+nISEDT1FO2oVAZLVLX0zTN6/tXwYA+Xh4ENEE9GhIQuRsKGtDw8VN5CJlApB9CAkJAhpCAMIEQEAgIASEgBAQCQkAICAGBgBAQAkJAICAEhIDIbFn2fx7zUfMm0kODAkqWzvnysmTkFIaAZjR+0q3TBEJACMgeJ+k6TSBs40d9uH0PJKBCx8kpDAGBgBAQAkJAICAEhIAQEAICASEgBEQZngsLx/1A0plgeW5pxTWQ8WOdAkJACMgeZ6brNIGwjR/14fY9kIAKHSenMAQEAkJACAgBgYAQEAJCQAgIBISAEBBleC4sHPcDSWeC5bmlFddAxo91CggBISB7nJmu0wTCNn7Uh9v3QAIqdJycwhAQCAgBISAEBAJCQAgIASEgEBACQkCUUfd2juPTdtoX3L4dBSSdv75stYycwhBQgPHzb68vIAQEZQO69UWui2iwjR8wJHwPJCDH2ykMASEgEBACQkAIiFTu+0NHAkJAxo+ALnT991X/fr9bi0lAJBs/oQMaPoRqjp8gPxIaegINaUg999VuDqfgb1bfrdQTMJ00Af2akXQEhF0YAvIWICAEhIAQEAgIASEgBAQCQkAICAGBgBAQAkJAICAEhIAQEAICASEgBISAQEAICAEhIBAQt/ADleuIzseDDosAAAAASUVORK5CYII=">
+<meta name="theme-color" content="#1f6feb">
+<link rel="manifest" href="manifest.json">
+
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--bg:#f4f5f7;--cd:#fff;--tx:#1a1d21;--mu:#6b7280;--ac:#1f6feb;--rd:#d93025;--gr:#188038;--bd:#e1e4e8}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#111418;--cd:#1b2026;--tx:#eef0f3;--mu:#98a1ad;--ac:#4c8dff;--rd:#ff6b61;--gr:#4cc26a;--bd:#2c333b}}
+:root[data-theme="dark"]{--bg:#111418;--cd:#1b2026;--tx:#eef0f3;--mu:#98a1ad;--ac:#4c8dff;--rd:#ff6b61;--gr:#4cc26a;--bd:#2c333b}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.4 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+.w{max-width:520px;margin:0 auto;padding:12px}
+.cd{background:var(--cd);border:1px solid var(--bd);border-radius:14px;padding:14px;margin-bottom:12px}
+.row{display:flex;gap:8px;align-items:center}
+select,input,button{font:inherit;color:var(--tx);border-radius:10px;border:1px solid var(--bd);background:var(--cd);padding:11px 12px;width:100%}
+button{cursor:pointer;width:auto}
+.pr{background:var(--ac);color:#fff;border:0;font-weight:600;width:100%;margin-top:8px}
+.bal{font-size:28px;font-weight:700;color:var(--rd)}
+.mu{color:var(--mu);font-size:14px}
+.tabs{display:flex;gap:6px;margin-bottom:12px}
+.tab{flex:1;padding:10px 4px;text-align:center;font-weight:600}
+.tab.on{background:var(--ac);color:#fff;border-color:var(--ac)}
+label{display:block;margin:8px 0 4px;color:var(--mu);font-size:14px}
+.it{display:flex;justify-content:space-between;gap:8px;padding:9px 0;border-top:1px solid var(--bd)}
+.it:first-child{border-top:0}
+.x{border:0;background:none;color:var(--rd);font-size:20px;padding:0 6px}
+.rp{white-space:pre-wrap;font-size:15px}
+.big{font-size:22px;font-weight:700;color:var(--rd);margin-top:8px}
+.sec{display:flex;gap:8px;margin-top:8px}
+.sec button{flex:1}
+#t{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:#222;color:#fff;padding:10px 16px;border-radius:20px;opacity:0;transition:.2s;pointer-events:none;max-width:90%;text-align:center}
+#t.on{opacity:1}
+#warn{background:#fff3cd;color:#664d03;padding:8px 12px;border-radius:10px;margin-bottom:12px;font-size:14px}
+</style></head><body><div class="w">
+<div id="warn" hidden>⚠️ Brauzer xotirasi ishlamayapti: yozuvlar saqlanmaydi. Sahifani oddiy brauzerda (Chrome/Safari) oching.</div>
+<div class="cd">
+ <div class="row"><select id="cl"></select><button id="nc">➕</button></div>
+ <div class="mu" style="margin-top:10px">Umumiy qarz</div>
+ <div class="bal" id="bal">0</div>
+</div>
+<div class="tabs">
+ <button class="tab" data-t="y">📦 Yuk</button><button class="tab" data-t="p">💰 To'lov</button>
+ <button class="tab" data-t="r">📊 Hisobot</button><button class="tab" data-t="o">⚙️ Boshqa</button>
+</div>
+
+<div class="pn" id="p_y"><div class="cd">
+ <label>Model nomi</label><input id="m" list="models" autocomplete="off"><datalist id="models"></datalist>
+ <div class="row"><div><label>Soni (dona)</label><input id="q" inputmode="decimal"></div>
+ <div><label>Narxi (somoni)</label><input id="pr" inputmode="decimal"></div></div>
+ <div class="mu" id="tot" style="margin-top:8px"></div>
+ <button class="pr" id="addY">Qo'shish</button></div>
+ <div class="cd"><b>Bugungi yozuvlar</b><div id="tl"></div></div></div>
+
+<div class="pn" id="p_p" hidden><div class="cd">
+ <label>Bugun qancha pul to'landi? (somoni)</label><input id="pa" inputmode="decimal">
+ <button class="pr" id="addP">To'lovni yozish</button></div></div>
+
+<div class="pn" id="p_r" hidden><div class="cd">
+ <label>Sana</label><input type="date" id="rd">
+ <div class="rp" id="rep" style="margin-top:10px"></div><div class="big" id="rest"></div>
+ <button class="pr" id="cp">📋 Hisobotni nusxalash</button></div></div>
+
+<div class="pn" id="p_o" hidden>
+ <div class="cd"><b>Eski qarz kiritish</b>
+ <label>Boshlang'ich qarz (somoni)</label><input id="da" inputmode="decimal">
+ <button class="pr" id="addD">Eski qarzni qo'shish</button><div id="dl"></div></div>
+ <div class="cd"><b>Zaxira nusxa</b><div class="mu">Telefon xotirasi tozalansa ma'lumot o'chadi. Vaqti-vaqti bilan nusxa oling va Telegramdagi «Saqlangan xabarlar»ga tashlab qo'ying.</div>
+ <div class="sec"><button id="bk">Nusxa olish</button><button id="rs">Tiklash</button></div></div>
+</div>
+</div><div id="t"></div>
+<script>
+const KEY='hisob_v1',$=i=>document.getElementById(i);
+let S,tab='y',ok=true;
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const fmt=x=>(Math.round(x*100)/100).toLocaleString('en-US',{maximumFractionDigits:2}).replace(/,/g,' ');
+const M=x=>fmt(x)+' somoni',p=v=>parseFloat(String(v).replace(/\s/g,'').replace(',','.'));
+const today=()=>new Date(Date.now()-new Date().getTimezoneOffset()*6e4).toISOString().slice(0,10);
+const dm=d=>d.split('-').reverse().join('.');
+function load(){try{S=JSON.parse(localStorage.getItem(KEY))}catch(e){}
+ if(!S||!S.clients)S={clients:[{id:1,name:'Asosiy mijoz'}],entries:[],cid:1,nid:1};
+ try{localStorage.setItem(KEY+'_t','1')}catch(e){ok=false;$('warn').hidden=false}}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){ok=false;$('warn').hidden=false}}
+function toast(m){const t=$('t');t.textContent=m;t.classList.add('on');clearTimeout(toast.h);toast.h=setTimeout(()=>t.classList.remove('on'),2200)}
+const mine=()=>S.entries.filter(e=>e.cid==S.cid);
+const bal=(before)=>mine().filter(e=>!before||e.day<before).reduce((a,e)=>a+(e.kind=='tolov'?-e.amount:e.amount),0);
+function add(e){e.id=S.nid++;e.cid=S.cid;e.day=e.day||today();S.entries.push(e);save();render()}
+function del(id){if(confirm("O'chiraymi?")){S.entries=S.entries.filter(e=>e.id!=id);save();render()}}
+const label=e=>e.kind=='yuk'?`${esc(e.model)}<div class="mu">${fmt(e.qty)} × ${fmt(e.price)}</div>`:e.kind=='tolov'?"💰 To'lov":'📒 Eski qarz';
+function list(rows){return rows.length?rows.map(e=>`<div class="it"><div>${label(e)}</div><div class="row"><b style="color:${e.kind=='tolov'?'var(--gr)':'inherit'}">${e.kind=='tolov'?'−':''}${M(e.amount)}</b><button class="x" onclick="del(${e.id})">×</button></div></div>`).join(''):'<div class="mu" style="padding-top:8px">Hozircha yo\'q</div>'}
+function repData(day){
+ const rows=mine().filter(e=>e.day==day),loads=rows.filter(e=>e.kind=='yuk'),
+ ls=loads.reduce((a,e)=>a+e.amount,0),ps=rows.filter(e=>e.kind=='tolov').reduce((a,e)=>a+e.amount,0),old=bal(day);
+ const name=S.clients.find(c=>c.id==S.cid).name;
+ let t=`Hisobot: ${dm(day)}\nMijoz: ${name}\n\n`;
+ t+=loads.length?loads.map((e,i)=>`${i+1}. ${e.model}: ${fmt(e.qty)} × ${fmt(e.price)} = ${M(e.amount)}`).join('\n'):"Bu kuni yuk yo'q";
+ t+=`\n\nYuklar jami: ${M(ls)}\nEski qarz: ${M(old)}\nUmumiy: ${M(old+ls)}\nTo'langan: ${M(ps)}`;
+ return{t,rest:'QOLGAN QARZ: '+M(old+ls-ps)}}
+function render(){
+ $('cl').innerHTML=S.clients.map(c=>`<option value="${c.id}" ${c.id==S.cid?'selected':''}>${esc(c.name)}</option>`).join('');
+ $('bal').textContent=M(bal());
+ $('models').innerHTML=[...new Set(S.entries.filter(e=>e.kind=='yuk').map(e=>e.model))].map(m=>`<option value="${esc(m)}">`).join('');
+ document.querySelectorAll('.tab').forEach(b=>b.classList.toggle('on',b.dataset.t==tab));
+ document.querySelectorAll('.pn').forEach(n=>n.hidden=n.id!='p_'+tab);
+ $('tl').innerHTML=list(mine().filter(e=>e.day==today()));
+ $('dl').innerHTML=list(mine().filter(e=>e.kind=='qarz'));
+ const r=repData($('rd').value||today());$('rep').textContent=r.t;$('rest').textContent=r.rest}
+document.querySelectorAll('.tab').forEach(b=>b.onclick=()=>{tab=b.dataset.t;render()});
+$('cl').onchange=e=>{S.cid=+e.target.value;save();render()};
+$('nc').onclick=()=>{const n=(prompt('Yangi mijoz ismi:')||'').trim();if(!n)return;
+ let c=S.clients.find(c=>c.name==n);if(!c){c={id:Math.max(...S.clients.map(c=>c.id))+1,name:n};S.clients.push(c)}S.cid=c.id;save();render()};
+function tot(){const q=p($('q').value),r=p($('pr').value);$('tot').textContent=q>0&&r>0?`Jami: ${M(q*r)}`:''}
+$('q').oninput=$('pr').oninput=tot;
+$('m').onchange=()=>{const l=mine().filter(e=>e.kind=='yuk'&&e.model==$('m').value.trim()).pop();if(l&&!$('pr').value){$('pr').value=l.price;tot()}};
+$('addY').onclick=()=>{const m=$('m').value.trim(),q=p($('q').value),r=p($('pr').value);
+ if(!m||!(q>0)||!(r>0))return toast("Model, soni va narxni to'g'ri yozing");
+ add({kind:'yuk',model:m,qty:q,price:r,amount:q*r});['m','q','pr'].forEach(i=>$(i).value='');$('tot').textContent='';toast("✅ Qo'shildi");$('m').focus()};
+$('addP').onclick=()=>{const v=p($('pa').value);if(!(v>0))return toast("Summani to'g'ri yozing");
+ add({kind:'tolov',amount:v});$('pa').value='';toast("✅ To'lov yozildi");tab='r';$('rd').value=today();render()};
+$('addD').onclick=()=>{const v=p($('da').value);if(!(v>0))return toast("Summani to'g'ri yozing");
+ add({kind:'qarz',amount:v,day:'0000-00-00'});$('da').value='';toast("✅ Eski qarz qo'shildi")};
+$('rd').onchange=render;
+$('cp').onclick=async()=>{const r=repData($('rd').value||today()),t=r.t+'\n\n'+r.rest;
+ try{await navigator.clipboard.writeText(t);toast('📋 Nusxalandi')}catch(e){prompt('Nusxa oling:',t)}};
+$('bk').onclick=async()=>{const j=JSON.stringify(S);try{await navigator.clipboard.writeText(j);toast('📋 Zaxira nusxalandi')}catch(e){prompt('Nusxa oling:',j)}};
+$('rs').onclick=()=>{const j=prompt('Zaxira nusxani shu yerga qo\'ying:');if(!j)return;
+ try{const d=JSON.parse(j);if(!d.clients||!d.entries)throw 0;if(!confirm("Hozirgi ma'lumotlar almashtiriladi. Davom etamizmi?"))return;S=d;save();render();toast('✅ Tiklandi')}catch(e){toast("Nusxa noto'g'ri")}};
+load();$('rd').value=today();render();
+</script><script>if('serviceWorker' in navigator)navigator.serviceWorker.register('sw.js').catch(function(){});</script>
+</body></html>
